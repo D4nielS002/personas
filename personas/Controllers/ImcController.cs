@@ -7,6 +7,10 @@ namespace personas.Controllers
     public class ImcController : Controller
     {
         public static List <PersonaModel> personas = new List <PersonaModel> ();
+        public IActionResult Index()
+        {
+            return View();
+        }
         [HttpPost]
         public IActionResult Index(PersonaModel model)
         {

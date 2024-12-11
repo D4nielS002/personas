@@ -18,7 +18,7 @@
         <h2 class="text-center">Formulario de registro</h2>
         
 
-        @using (Html.BeginForm("CalcularIMC", "imc", FormMethod.Post, new { @class = "mt-4" }))
+        @using (Html.BeginForm("Index", "imc", FormMethod.Post, new { @class = "mt-4" }))
         {
             @Html.AntiForgeryToken()
 
